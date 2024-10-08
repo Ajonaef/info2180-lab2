@@ -1,0 +1,136 @@
+/* Default text style */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+    color: #2D3748;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container grid layout */
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header with Flexbox to center text and image */
+header {
+    grid-area: header;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Profile picture in a circle */
+.profile-pic {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Header text styling */
+h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+/* One-liner statement */
+header p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+/* Blog post titles */
+h2 {
+    font-size: 32px;
+    color: #48BB78;
+}
+
+/* Date and author styling */
+p em {
+    color: #718096;
+}
+
+/* Horizontal line (divider) styling */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #E2E8F0; /* Light grey color to match the design */
+    margin: 40px 0; /* Adds space above and below the line */
+}
+
+/* Blog post image styling */
+.blog-img {
+    float: right;
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+}
+
+/* Sidebar styling */
+aside {
+    grid-area: aside;
+}
+
+/* Sidebar sections */
+aside section {
+    margin-bottom: 20px;
+}
+
+/* About section with grey background */
+aside section:first-of-type {
+    background-color: #E2E8F0;
+    padding: 10px;
+    text-align: left;
+}
+
+aside section:first-of-type h3 {
+    color: #000000;
+}
+
+/* Social Media and Archives headings */
+aside h3:nth-of-type(2), aside h3:nth-of-type(3) {
+    color: #48BB78;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Social Media and Archive links styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a {
+    color: #4299E1;
+    text-decoration: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer styling */
+footer {
+    grid-area: footer;
+    background-color: #2C5282;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+}
+
+
